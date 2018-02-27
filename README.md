@@ -68,7 +68,7 @@ html代码如下(将此段复制到body中)
 	
 ```
 
-
+js代码如下
 ``` xml
 <script>
 	interactive.init('xiaoneng');
@@ -88,7 +88,7 @@ html代码如下(将此段复制到body中)
 **15天循环倒计时**
 
 
-html代码如下(将此段复制到body中)
+html代码如下
 
 ``` stylus
 <!DOCTYPE html>
@@ -111,4 +111,16 @@ html代码如下(将此段复制到body中)
 	
 ```
 
-确保成功引入common.js后，在需要显示倒计时的标签上添加id为lastDate即可
+js代码如下
+
+``` xml
+<script>
+	interactive.init('xiaoneng'); //初始化小能
+	//应用代码 sunland.lastTime('id',截止天数);
+	sunland.lastTime('lastDate',1);
+</script>
+```
+----------
+确保成功引入common.js后，调用方法lastTime('id',截止天数);
+common.js引入位置为body结束标签之前
+调用的方法lastTime在common.js之后
