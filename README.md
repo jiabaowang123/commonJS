@@ -116,11 +116,15 @@ js代码如下
 ``` xml
 <script>
 	interactive.init('xiaoneng'); //初始化小能
+	
+	
 	//应用代码 sunland.lastTime('id',截止天数);
 	sunland.lastTime('lastDate',1);
 </script>
 ```
+**注意**
+ 1. 确保成功引入common.js后，调用方法lastTime('id',截止天数); 
+ 2. common.js引入位置为body结束标签之前
+ 3. 调用的方法lastTime在common.js之后
 ----------
-确保成功引入common.js后，调用方法lastTime('id',截止天数);
-common.js引入位置为body结束标签之前
-调用的方法lastTime在common.js之后
+
