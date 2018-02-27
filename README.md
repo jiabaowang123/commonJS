@@ -83,5 +83,32 @@ html代码如下(将此段复制到body中)
 	}
 </script>
 ```
+----------
+
+**15天循环倒计时**
 
 
+html代码如下(将此段复制到body中)
+
+``` stylus
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>         <!--Title替换成页面的标题--> 
+    <script>
+        var siteId = 111111     //用自己的站点ID替换111111
+    </script>
+    <script src="http://ggtf.sunland.org.cn/statistics/sunlandsLog.js"></script>
+</head>
+<body>
+   <script src="http://ggtf.sunland.org.cn/statistics/interactive.js"></script>
+    <!--页面代码开始-->  
+	<span id="lastDate"></span>
+    <!--页面代码结束-->
+</body>
+</html>
+	
+```
+
+确保成功引入common.js后，在需要显示倒计时的标签上添加id为lastDate即可
