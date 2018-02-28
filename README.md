@@ -44,43 +44,10 @@ common.min.js 封装的功能包括：
 **手机格式检测的使用说明**
 
 
-html代码如下(将此段复制到body中)
-
-``` stylus
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>         <!--Title替换成页面的标题--> 
-    <script>
-        var siteId = 111111     //用自己的站点ID替换111111
-    </script>
-    <script src="http://ggtf.sunland.org.cn/statistics/sunlandsLog.js"></script>
-</head>
-<body>
-   <script src="http://ggtf.sunland.org.cn/statistics/interactive.js"></script>
-    <!--页面代码开始-->  
-	<input type="text" id="phone">
-	<button id="btn">click me !</button>
-    <!--页面代码结束-->
-</body>
-</html>
-	
-```
-
-js代码如下
+js调用代码如下
 ``` xml
 <script>
-	interactive.init('xiaoneng');
-	document.getElementById('btn').onclick=function(e){      //用手机留言发起按钮的ID替换btn
-		if(sunland.phoneTest("phone")){
-			alert('恭喜您提交成功');
-			console.log(sunland.phoneTest("phone"))
-            interactive.submitMsg(e,'stPhone',sunland.phoneTest("phone"),'留言发起');
-		}else{
-			alert('请输入11位有效的手机号码');
-		}
-	}
+	 sunland.phoneTest('id')
 </script>
 ```
 ----------
